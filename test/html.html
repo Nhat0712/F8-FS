@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.html" />
+    <title>Trang web của tôi</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        margin-right: 20px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav a:hover {
+        color: #333;
+      }
+      nav a.active {
+        color: red;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: width 0.4s ease;
+      }
+      nav a.active::after {
+        width: 100%;
+      }
+      main {
+        padding: 20px;
+        min-height: 400px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header - Logo/Title</h1>
+    </header>
+
+    <nav>
+      <a href="h" id="homeLink" class="active" onclick="loadPage('home.html')"
+        >Trang chủ</a
+      >
+      <a href="#" id="infoLink" onclick="loadPage('info.html')">Thông tin</a>
+      <a href="#" id="contactLink" onclick="loadPage('contact.html')"
+        >Liên hệ</a
+      >
+    </nav>
+
+    <main id="mainContent">
+      <h2>Nội dung trang chủ</h2>
+      <p>Đây là nội dung trang chủ...</p>
+    </main>
+
+    <footer>
+      <p>Footer - © 2024 Trang web của tôi</p>
+    </footer>
+
+    <script>
+      function loadPage(pageUrl) {
+        fetch("/test/" + pageUrl)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("mainContent").innerHTML = html;
+            document
+              .querySelectorAll("nav a")
+              .forEach((link) => link.classList.remove("active"));
+            document
+              .querySelector(`nav a[href="${pageUrl}"]`)
+              .classList.add("active");
+            history.pushState({}, "", pageUrl); // Cập nhật địa chỉ URL
+          })
+          .catch((error) => console.error("Error loading page:", error));
+      }
+    </script>
+  </body>
+</html>

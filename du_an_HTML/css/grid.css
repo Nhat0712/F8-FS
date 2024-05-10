@@ -141,7 +141,6 @@ g-5 => 3 * spacer
     flex-basis: var(--column-width);
     max-width: var(--column-width);
     padding: 0 calc(var(--column-space) / 2);
-    /* margin-bottom: var(--column-space); */
   }
   
   .col-1 {
