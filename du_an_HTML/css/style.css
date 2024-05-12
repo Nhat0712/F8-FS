@@ -17,6 +17,7 @@ body {
   color: #2c2c2c;
   line-height: 1.25;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -99,6 +100,8 @@ h6 {
 .header {
   padding: 10px 0;
   box-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
 }
 .header .logo {
   height: 99px;
@@ -204,6 +207,47 @@ h6 {
     opacity: 1;
     visibility: visible;
   }
+}
+.hero {
+  position: relative;
+  z-index: 1;
+}
+.hero .hero-text h1,
+.hero .hero-text h2 {
+  font-weight: 800;
+}
+.hero .hero-text h1 {
+  font-size: 3.6rem;
+}
+.hero .hero-text h2 {
+  font-size: 4.3rem;
+}
+.hero .hero-text p {
+  max-width: 75%;
+}
+.hero .hero-image {
+  background: #dcffca;
+  width: 50vw;
+  min-height: 708px;
+  padding: 55px 0;
+  border-radius: 16.667px 0px 0px 16.667px;
+  position: relative;
+}
+.hero .hero-image span {
+  width: 40%;
+  color: #216000;
+  font-size: 15.6rem;
+  font-weight: 800;
+  opacity: 0.15;
+  transform: rotate(90deg);
+  line-height: 1;
+  position: absolute;
+  left: 400px;
+}
+.hero .hero-image img {
+  width: 65%;
+  margin-top: 30px;
+  margin-left: -80px;
 }
 
 /*# sourceMappingURL=style.css.map */

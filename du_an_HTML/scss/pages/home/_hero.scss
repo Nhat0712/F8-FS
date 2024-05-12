@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+    z-index: 1;
+    .hero-text {
+        h1,
+        h2 {
+            font-weight: 800;
+        }
+        h1 {
+            font-size: 3.6rem;
+        }
+        h2 {
+            font-size: 4.3rem;
+        }
+        p {
+            max-width: 75%;
+        }
+    }
+
+    .hero-image {
+        background: #dcffca;
+        width: 50vw;
+        min-height: 708px;
+        padding: 55px 0;
+        border-radius: 16.667px 0px 0px 16.667px;
+        position: relative;
+        span {
+            width: 40%;
+            color: #216000;
+            font-size: 15.6rem;
+            font-weight: 800;
+            opacity: 0.15;
+            transform: rotate(90deg);
+            line-height: 1;
+            position: absolute;
+            left: 400px;
+        }
+
+        img {
+            width: 65%;
+            margin-top: 30px;
+            margin-left: -80px;
+        }
+    }
+}
