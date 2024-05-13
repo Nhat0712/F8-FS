@@ -13,7 +13,7 @@
             font-size: 4.3rem;
         }
         p {
-            max-width: 75%;
+            max-width: 77%;
         }
     }
 
@@ -25,21 +25,115 @@
         border-radius: 16.667px 0px 0px 16.667px;
         position: relative;
         span {
-            width: 40%;
             color: #216000;
             font-size: 15.6rem;
             font-weight: 800;
             opacity: 0.15;
             transform: rotate(90deg);
             line-height: 1;
+            display: inline-block;
             position: absolute;
-            left: 400px;
+            top: 0;
+            bottom: 0;
+            left: 35px;
         }
 
         img {
-            width: 65%;
+            width: 432px;
             margin-top: 30px;
             margin-left: -80px;
+        }
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+    .hero {
+        .hero-image {
+            img {
+                width: 350px;
+                margin-left: -60px;
+            }
+            span {
+                font-size: 14rem;
+                left: -5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .hero {
+        .hero-image {
+            span {
+                font-size: 10rem;
+                left: -20%;
+                top: -20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .hero {
+        .hero-text {
+            text-align: center;
+            margin-bottom: 20px;
+            p {
+                margin: 0 auto;
+                max-width: 80%;
+                text-align: justify;
+            }
+        }
+        .hero-image {
+            width: 100%;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 380px;
+                margin: 0 -50px 0 0;
+            }
+            span {
+                position: static;
+                font-size: 13rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .hero {
+        .hero-image {
+            text-align: center;
+            min-height: auto;
+            display: block;
+            img {
+                margin: 0 auto;
+                max-width: 70%;
+                display: block;
+            }
+            span {
+                position: static;
+                transform: rotate(0deg);
+                font-size: 8rem;
+                display: block;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .hero {
+        .hero-image {
+            span {
+                br {
+                    display: block;
+                }
+            }
         }
     }
 }

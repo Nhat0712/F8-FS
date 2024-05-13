@@ -9,9 +9,9 @@
 @import "layouts/header";
 @import "layouts/footer";
 
-
 // Import Pages
 
 // 1. Home
-@import "pages/home/hero.scss"
-
+@import "pages/home/hero.scss";
+@import "pages/home/counter.scss";
+@import "pages/home/products";
