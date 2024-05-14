@@ -18,7 +18,25 @@
     display: inline-block;
     &.btn-primary {
         background: $primaryColor;
+        &:hover {
+            background: $secondaryColor;
+        }
     }
+
+    &.btn-outline-primary {
+        color: $textColor;
+        padding: 11.667px 21.667px;
+        border: 1px solid $primaryColor;
+        &:hover {
+            background: $primaryColor;
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
     &:hover {
         color: #fff;
     }
