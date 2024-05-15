@@ -1,0 +1,101 @@
+.footer {
+    background: #f2ffec;
+    padding-top: 66px;
+    padding-bottom: 40px;
+    .footer-inner,
+    .footer-bottom {
+        @include center(83%);
+    }
+
+    .footer-inner {
+        &::after {
+            content: "";
+            @include center(98%);
+            margin-top: 72.5px;
+            display: block;
+            height: 1.67px;
+            background: #a3a3a3;
+        }
+        .footer-item {
+            .logo {
+                margin-bottom: 24.58px;
+            }
+            p {
+                margin-bottom: 6.67px;
+                &.title {
+                    color: $primaryColor;
+                    margin-bottom: 13px;
+                    font-weight: 600;
+                }
+            }
+
+            ul {
+                li {
+                    margin-bottom: 6.67px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    svg {
+                        flex-basis: 20px;
+                        margin-right: 10px;
+                    }
+                    span {
+                        flex-basis: calc(100% - 30px);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 24.17px;
+        .socials {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 6.67px;
+            li {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    background: #dcffca;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .footer {
+        .footer-inner {
+            &::after {
+                margin-top: 15px;
+            }
+            .footer-item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .footer {
+        .footer-bottom {
+            a {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .socials {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
