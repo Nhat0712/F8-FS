@@ -1,0 +1,155 @@
+.about-greenchop {
+    margin-bottom: 100px;
+    .container {
+        .title {
+            text-align: center;
+            h2 {
+                margin-bottom: 24.67px;
+            }
+        }
+        .info-greenchop {
+            margin-bottom: 50.74px;
+            &:nth-child(2) {
+                .row {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    .image {
+                        img {
+                            width: 479.167px;
+                        }
+                    }
+                    .info {
+                        p {
+                            max-width: 75%;
+                            font-size: 1.3rem;
+                            line-height: 1.43;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .row {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .image {
+                    img {
+                        width: 377.5px;
+                    }
+                }
+                .info {
+                    p {
+                        max-width: 88%;
+                        font-size: 1.3rem;
+                        line-height: 1.43;
+                        &:nth-child(1) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .row {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .image {
+                    display: flex;
+                    justify-content: end;
+                    img {
+                        width: 394.534px;
+                    }
+                }
+                .info {
+                    p {
+                        max-width: 75%;
+                        font-size: 1.3rem;
+                        line-height: 1.43;
+                        &:nth-child(1) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .about-greenchop {
+        .container {
+            .info-greenchop {
+                &:nth-child(2) {
+                    .row {
+                        flex-direction: column;
+                        .image {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                max-width: 90%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .info {
+                            p {
+                                max-width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .row {
+                        flex-direction: column;
+
+                        .image {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                max-width: 90%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .info {
+                            p {
+                                max-width: 80%;
+                                margin: 0 auto;
+                                &:nth-child(1) {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .row {
+                        flex-direction: column;
+
+                        .image {
+                            justify-content: center;
+                            img {
+                                max-width: 90%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .info {
+                            p {
+                                max-width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

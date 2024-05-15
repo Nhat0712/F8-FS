@@ -1,0 +1,105 @@
+.product-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cover {
+        max-width: 1600px;
+        height: 391.667px;
+        background-image: url("/du_an_HTML/images/family-img.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            background-color: #000000;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .info-main {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            h2 {
+                color: #fff;
+                padding: 70px 0 49.67px;
+                font-size: 3.1rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            p {
+                padding-bottom: 70px;
+                max-width: 50%;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            .above-quotes {
+                position: absolute;
+                top: 115.83px;
+                left: 16%;
+            }
+            .below-quotes {
+                position: absolute;
+                right: 16%;
+                top: 240.83px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+    .product-main {
+        .cover {
+            .info-main {
+                .above-quotes {
+                    left: 12%;
+                }
+                .below-quotes {
+                    right: 12%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .product-main {
+        .cover {
+            height: auto;
+            .info-main {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .product-main {
+        .cover {
+            .info-main {
+                h2 {
+                    max-width: 90%;
+                    padding: 40px 0 20px;
+                }
+                p {
+                    max-width: 70%;
+                    padding-bottom: 40px;
+                    text-align: justify;
+                }
+
+                .above-quotes,
+                .below-quotes {
+                    display: none;
+                }
+            }
+        }
+    }
+}

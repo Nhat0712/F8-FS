@@ -1,0 +1,90 @@
+.mission-greenchop {
+    .row {
+        margin-top: 100px;
+        margin-bottom: 232.98px;
+        .image {
+            display: flex;
+            justify-content: end;
+            position: relative;
+
+            img {
+                width: 400px;
+            }
+            &::before {
+                content: "";
+                display: block;
+                background: #dcffca;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                position: absolute;
+                top: 75.83px;
+                right: 185.83px;
+                z-index: -2;
+            }
+            &::after {
+                content: "";
+                display: block;
+                background: #ffd5bd;
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                position: absolute;
+                top: 278.33px;
+                right: 125px;
+                z-index: -1;
+            }
+        }
+        .info {
+            margin-left: 71.67px;
+            h2 {
+                margin: 66.67px 0 26.33px;
+                font-size: 3.1rem;
+                font-weight: 800;
+            }
+            p {
+                text-align: justify;
+                max-width: 67%;
+                font-size: 1.3rem;
+                line-height: 1.43;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .mission-greenchop {
+        .row {
+            .image {
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .mission-greenchop {
+        .row {
+            margin: 50px 0;
+            .image {
+                justify-content: center;
+            }
+
+            .info {
+                margin: 0 auto;
+
+                h2 {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                p {
+                    max-width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,35 @@
-.greenchoptitle {
+.greenchop-title {
     background: #f2ffec;
     width: 100%;
     height: 166.667px;
+    display: flex;
+    align-items: center;
     h1 {
-        color: #fff;
+        margin-left: 200px;
+        font-size: 4.3rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .greenchop-title {
+        justify-content: center;
+        h1 {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .greenchop-title {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .greenchop-title {
+        h1 {
+            font-size: 3.1rem;
+        }
     }
 }
