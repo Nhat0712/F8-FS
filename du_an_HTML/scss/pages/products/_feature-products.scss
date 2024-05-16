@@ -1,0 +1,38 @@
+.feature-products {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 30px;
+
+        .info {
+            margin-left: 20px;
+            flex-direction: column;
+            position: relative;
+            h2 {
+                margin-bottom: 15.17px;
+                font-size: 3.1rem;
+                font-weight: 800;
+            }
+            p {
+                max-width: 60%;
+                font-size: 1.3rem;
+                line-height: 1.43;
+            }
+            svg {
+                width: 162.5px;
+                position: absolute;
+                z-index: -1;
+                top: -33px;
+                left: -52px;
+            }
+        }
+
+        .image {
+            img {
+                width: 503.333px;
+                border-radius: 6.667px;
+            }
+        }
+    }
+}
