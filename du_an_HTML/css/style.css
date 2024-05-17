@@ -1520,7 +1520,6 @@ h6 {
 .rule-5k .cover {
   max-width: 1600px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .rule-5k .cover .cover-info:nth-child(1) {
   background: #f2ffec;
