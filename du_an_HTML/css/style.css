@@ -1787,10 +1787,6 @@ h6 {
   font-size: 3.1rem;
   font-weight: 800;
 }
-.posts-popular .posts-list {
-  display: flex;
-  justify-content: center;
-}
 .posts-popular .posts-list .post-item .image img {
   border-radius: 6.667px;
 }
