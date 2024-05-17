@@ -1,0 +1,30 @@
+.describe-products {
+    .cover {
+        max-width: 1600px;
+        margin: 100px auto 246px;
+
+        .info {
+            display: flex;
+            max-width: 653px;
+            margin-left: 312.5px;
+            box-shadow: 30px 30px 80px 15px rgb(237, 237, 237);
+            position: relative;
+            p {
+                max-width: 85%;
+                margin-top: 90.83px;
+                margin-left: 62.5px;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+
+            img {
+                &:nth-child(3) {
+                    max-width: 100%;
+                    position: absolute;
+                    top: 35.83px;
+                    left: calc(100% + 45px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.rule-5k {
+    margin-bottom: 83.67px;
+    .rule-title {
+        text-align: center;
+        h2 {
+            font-size: 3.1rem;
+            font-weight: 800;
+            margin-bottom: 49.33px;
+        }
+    }
+    .cover {
+        max-width: 1600px;
+        margin: 0 auto;
+
+        .cover-info {
+            &:nth-child(1) {
+                background: #f2ffec;
+                margin-left: 200px;
+                margin-bottom: 165px;
+
+                .info {
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 50.83px;
+                    position: relative;
+                    top: 66.67px;
+                    left: 114.17px;
+                    p {
+                        max-width: 39%;
+                        font-size: 1.3rem;
+                        line-height: 1.43;
+                        position: relative;
+                        svg {
+                            position: absolute;
+                            top: 121.67px;
+                            right: 0.83px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                background: #fff0e7;
+                margin-right: 200px;
+                .info {
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 48.33px;
+                    position: relative;
+                    top: 66.67px;
+                    right: 112.5px;
+                    p {
+                        max-width: 39.5%;
+                        font-size: 1.3rem;
+                        line-height: 1.43;
+                        position: relative;
+                        svg {
+                            position: absolute;
+                            top: 124.17px;
+                            left: 1.67px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
