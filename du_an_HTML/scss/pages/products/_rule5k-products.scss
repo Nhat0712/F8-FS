@@ -19,7 +19,7 @@
 
                 .info {
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     column-gap: 50.83px;
                     position: relative;
                     top: 66.67px;
@@ -43,7 +43,7 @@
                 margin-right: 200px;
                 .info {
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-end;
                     column-gap: 48.33px;
                     position: relative;
                     top: 66.67px;
