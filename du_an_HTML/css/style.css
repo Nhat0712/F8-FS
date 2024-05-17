@@ -1783,49 +1783,56 @@ h6 {
   text-align: center;
 }
 .posts-popular .posts-heading h2 {
-  margin: 0;
+  margin: 0 0 49.67px;
   font-size: 3.1rem;
   font-weight: 800;
 }
-.posts-popular .posts-list .post-item .image img {
+.posts-popular .posts-list .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.posts-popular .posts-list .row .post-item .image img {
   border-radius: 6.667px;
 }
-.posts-popular .posts-list .post-item .meta {
+.posts-popular .posts-list .row .post-item .meta {
   margin: 16.27px 0 18.67px;
   display: flex;
   justify-content: space-between;
 }
-.posts-popular .posts-list .post-item .meta li:first-child a {
-  color: #46b20f;
+.posts-popular .posts-list .row .post-item .meta li:first-child a {
+  color: #a3a3a3;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.posts-popular .posts-list .post-item .meta li:last-child {
+.posts-popular .posts-list .row .post-item .meta li:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.posts-popular .posts-list .post-item .meta li:last-child span {
+.posts-popular .posts-list .row .post-item .meta li:last-child span {
   color: #a3a3a3;
   font-weight: 500;
   font-size: 1.5rem;
 }
-.posts-popular .posts-list .post-item .meta li:last-child svg {
+.posts-popular .posts-list .row .post-item .meta li:last-child svg {
   vertical-align: top;
 }
-.posts-popular .posts-list .post-item .title {
+.posts-popular .posts-list .row .post-item .title {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 16.27px;
 }
-.posts-popular .posts-more {
+.posts-popular .posts-pages {
   text-align: center;
+  margin: 111px 0 69px 0;
 }
-.posts-popular .posts-more a {
-  margin-top: 79.67px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.posts-popular .posts-pages a:nth-child(1) {
+  color: #46b20f;
+}
+.posts-popular .posts-pages a {
+  font-size: 1.6rem;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -1839,24 +1846,22 @@ h6 {
   .posts-popular .posts-heading h2 {
     text-align: center;
   }
-  .posts-popular .posts-more {
-    margin-top: 0;
+  .posts-popular .posts-list .post-item {
+    margin: 0 auto 25px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .posts-popular .posts-list .post-item .image img {
+    width: 100%;
+  }
+  .posts-popular .posts-pages {
+    margin: 20px 0s;
   }
 }
 @media screen and (max-width: 767.98px) {
   .posts-popular {
     padding: 20px 0;
-  }
-  .posts-popular .posts-list .post-item {
-    margin-bottom: 25px;
-  }
-  .posts-popular .posts-more a {
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 575.98px) {
-  .posts-popular .posts-list .post-item .image img {
-    width: 100%;
   }
 }
 
