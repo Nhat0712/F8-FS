@@ -1,0 +1,151 @@
+.top-news {
+    .container {
+        margin-top: 133.33px;
+        .row:nth-child(1) {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+            .image {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .info {
+                margin: 26.67px 0 0 40px;
+                > span {
+                    color: $primaryColor;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    margin-bottom: 27.33px;
+                }
+                p {
+                    font-size: 1.3rem;
+                    line-height: 1.43;
+                    margin-bottom: 49.67px;
+                }
+                .posts-more {
+                    a {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            .image {
+                display: flex;
+                justify-content: flex-start;
+                img {
+                    position: relative;
+                    top: -80px;
+                }
+            }
+            .info {
+                margin: 73.33px 0 0 20px;
+                > span {
+                    color: $primaryColor;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    margin-bottom: 27.33px;
+                }
+                p {
+                    font-size: 1.3rem;
+                    line-height: 1.43;
+                    margin-bottom: 49.67px;
+                }
+                .posts-more {
+                    a {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .top-news {
+        .row {
+            .image {
+                img {
+                    position: static;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            .image {
+                img {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .top-news {
+        .container {
+            margin-top: 50px;
+            .row {
+                .image {
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+                .info {
+                    margin: 20px 0 !important;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    h3 {
+                        margin-bottom: 20px !important;
+                        br {
+                            display: none;
+                        }
+                    }
+                    p {
+                        max-width: 80%;
+                        text-align: justify;
+                        margin-bottom: 10px !important;
+                    }
+                    .posts-more {
+                        a {
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
+            .row:nth-child(2) {
+                .image {
+                    img {
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+}
