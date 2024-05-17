@@ -7,7 +7,6 @@
 
         .info {
             margin-left: 20px;
-            flex-direction: column;
             position: relative;
             h2 {
                 margin-bottom: 15.17px;
@@ -32,6 +31,47 @@
             img {
                 width: 503.333px;
                 border-radius: 6.667px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .feature-products {
+        .row {
+            justify-content: center;
+            .info {
+                text-align: center;
+                p {
+                    margin: 0 auto;
+                    max-width: 70%;
+                    text-align: justify;
+                }
+                svg {
+                    display: none;
+                }
+            }
+            .image {
+                max-width: 90%;
+                margin: 20px auto 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .feature-products {
+        .row {
+            .info {
+                h2 {
+                    br {
+                        display: none;
+                    }
+                }
+                p {
+                    max-width: 90%;
+                }
             }
         }
     }

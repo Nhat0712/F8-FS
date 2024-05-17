@@ -1,12 +1,13 @@
 .describe-products {
+    max-width: 1600px;
+    margin: 100px auto 246px;
     .cover {
         max-width: 1600px;
-        margin: 100px auto 246px;
 
         .info {
             display: flex;
             max-width: 653px;
-            margin-left: 312.5px;
+            margin-left: 312px;
             box-shadow: 30px 30px 80px 15px rgb(237, 237, 237);
             position: relative;
             p {
@@ -19,10 +20,79 @@
 
             img {
                 &:nth-child(3) {
-                    max-width: 100%;
+                    width: 588.333px;
                     position: absolute;
                     top: 35.83px;
-                    left: calc(100% + 45px);
+                    right: 0;
+                    translate: calc(100% + 45px) 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1599.98px) {
+    .describe-products {
+        margin-bottom: 100px;
+        .cover {
+            .info {
+                max-width: 80%;
+                margin: auto;
+                p {
+                    margin: auto 30px;
+                    text-align: justify;
+                }
+                img {
+                    &:nth-child(3) {
+                        position: static;
+                        object-fit: contain;
+                        translate: 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .describe-products {
+        margin: 0 auto 50px;
+        .cover {
+            .info {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                box-shadow: none;
+                p {
+                    max-width: 90%;
+                }
+                img {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        display: block;
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .describe-products {
+        .cover {
+            .info {
+                max-width: 100%;
+                p {
+                    max-width: 98%;
+                }
+                img {
+                    &:nth-child(3) {
+                        display: block;
+                        width: 85%;
+                    }
                 }
             }
         }

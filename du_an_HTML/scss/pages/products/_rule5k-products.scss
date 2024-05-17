@@ -11,6 +11,7 @@
     .cover {
         max-width: 1600px;
         margin: 0 auto;
+        overflow: hidden;
 
         .cover-info {
             &:nth-child(1) {
@@ -59,6 +60,98 @@
                             top: 124.17px;
                             left: 1.67px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+    .rule-5k {
+        .cover {
+            .cover-info {
+                &:nth-child(1) {
+                    margin: 0 0 50px 0;
+                    .info {
+                        position: static;
+                        p {
+                            margin: auto 0;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin: 0;
+                    .info {
+                        position: static;
+                        p {
+                            margin: auto 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .rule-5k {
+        margin-bottom: 0;
+        .cover {
+            .cover-info {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    .info {
+                        svg {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .rule-5k {
+        .rule-title {
+            h2 {
+                br {
+                    display: none;
+                }
+            }
+        }
+        .cover {
+            .cover-info {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    .info {
+                        padding: 10px 0;
+                        row-gap: 20px;
+                        p,
+                        img {
+                            margin: 0 auto;
+                        }
+                        p {
+                            max-width: 90%;
+                            text-align: justify;
+                        }
+                        img {
+                            max-width: 80%;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    .info {
+                        flex-direction: column;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .info {
+                        flex-direction: column-reverse;
                     }
                 }
             }
