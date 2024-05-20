@@ -1091,11 +1091,18 @@ h6 {
 .product-main .cover {
   max-width: 1600px;
   height: 391.667px;
-  background-image: url("/du_an_HTML/images/family-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+.product-main .cover img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  object-fit: cover;
 }
 .product-main .cover::after {
   content: "";
